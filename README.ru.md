@@ -168,15 +168,15 @@ Alwtniet, Anker Nebula, BYINTEK, Epson, Formovie, Gadnic, HOTACK, HY320, JMGO, M
 
 ```bash
 python3 -m venv tools/venv && tools/venv/bin/pip install -r tools/requirements.txt
-export TV_HOST=192.168.1.50                                   # your TV's IP address
+export TV_HOST=192.168.1.50                                   # IP-адрес вашего телевизора
 
-tools/venv/bin/python -I tools/tv.py --probe                 # model, Android version, firmware
-tools/venv/bin/python -I tools/tv.py 'pm list packages'      # one shell command on the TV
-tools/disable.sh examples/xiaomi-mi-tv-4a/debloat.txt        # apply a debloat list
-tools/restore.sh examples/xiaomi-mi-tv-4a/debloat.txt        # undo it, stock launcher back
-tools/venv/bin/python -I tools/check.py examples/xiaomi-mi-tv-4a/debloat.txt   # what a firmware update undid
-TV_HOST=192.168.1.50 launcher/build-and-install.sh           # build the launcher and make it Home
-tools/theme.sh themes/aurora                                 # push a theme; --reset removes it
+tools/venv/bin/python -I tools/tv.py --probe                 # модель, версия Android, прошивка
+tools/venv/bin/python -I tools/tv.py 'pm list packages'      # консольная команда на телевизоре
+tools/disable.sh examples/xiaomi-mi-tv-4a/debloat.txt        # применить список для очистки
+tools/restore.sh examples/xiaomi-mi-tv-4a/debloat.txt        # отменить его, вернуть стандартный лаунчер
+tools/venv/bin/python -I tools/check.py examples/xiaomi-mi-tv-4a/debloat.txt   # что откатило обновление прошивки
+TV_HOST=192.168.1.50 launcher/build-and-install.sh           # собрать лаунчер и сделать его главным экраном
+tools/theme.sh themes/aurora                                 # применить тему; --reset удаляет ее
 ```
 
 | Инструмент | Что делает |
