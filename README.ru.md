@@ -182,7 +182,7 @@ tools/theme.sh themes/aurora                                 # применит�
 | Инструмент | Что делает |
 |---|---|
 | [`tools/tv.py`](tools/tv.py) | Чистый Python ADB-клиент: shell, batch, push, pull, reboot и скриншоты, с опциональным предварительным нажатием кнопок пульта. Работает там, где заблокирован стандартный бинарник `adb`. Опциональный [сопряженный Google ADB бэкенд](tools/native-adb.md) для зашифрованной беспроводной отладки. |
-| [`tools/docker-build.sh`](tools/docker-build.sh) | Builds the launcher or an add-on in Docker (JDK 17, Android SDK 34), so this computer needs nothing but Docker. Install the result with `SKIP_BUILD=1`. [Guide](tools/docker-build.md). |
+| [`tools/docker-build.sh`](tools/docker-build.sh) | Собирает лаунчер или аддон в Docker (JDK 17, Android SDK 34), поэтому на этом компьютере не нужно ничего, кроме Docker. Установите результат с `SKIP_BUILD=1`. [Гайд](tools/docker-build.md). |
 | [`tools/b64push.py`](tools/b64push.py) | Uploads large files such as APKs in base64 chunks and verifies the checksum. |
 | [`tools/relay.py`](tools/relay.py) | Forwards a local port to the TV's ADB port, for assistants whose sandbox can't reach your network. Listens on this computer only. [Guide](tools/relay.md). |
 | [`tools/disable.sh`](tools/disable.sh), [`restore.sh`](tools/restore.sh) | Apply or undo a debloat list, the undo from the state recorded before the change. |
