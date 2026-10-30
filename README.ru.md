@@ -44,12 +44,12 @@ cleanyourtv.com, не имеют отношения к данному проек
 [Восстановление](#restoring-your-tv) · [Обновление прошивки](#after-a-firmware-update) ·
 [Вопросы](#questions-people-ask) · [Участие в проекте](#contributing)
 
-## How it works
+## Как это работает
 
-Android TVs have the same debug bridge as Android phones. Switch on USB debugging in the TV's
-developer options, allow your computer once, and the rest is standard Android tooling:
+В Android TV используется тот же способ отладки что и на Android-смартфонах. Включите отладку по USB в настройках разработчика телевизора,
+один раз разрешите доступ своему компьютеру, а дальше в дело вступают стандартные инструменты Android:
 
-| Step | What happens |
+| Шаг | Что происходит |
 |---|---|
 | **Back&nbsp;up** | The list of installed packages and settings. |
 | **Disable** | The manufacturer's telemetry, ad services, content rows and preloaded junk, with `pm disable-user`. Nothing is uninstalled, so a restore script can undo every step. |
