@@ -70,19 +70,19 @@ cleanyourtv.com, не имеют отношения к данному проек
 Три шага ниже написаны для ИИ-ассистента: компьютер должен быть подключен к той же Wi-Fi сети,
 что и телевизор, иметь командную оболочку, а также установленные Python 3, JDK версий от 17 до 22 и Android SDK platform 34
 с build-tools 34 (помощник собирает лаунчер именно там).
-Без ИИ-ассистента перейти в раздел [Ручная настройка](#doing-it-by-hand)
+Без ИИ-ассистента перейти в раздел [Ручная настройка](#Ручная-настройка)
 В разделе есть все те же действия, которые вы выполняете сами, а также необходимые команды для установки.
 
-Any of these work: Claude Code (on [0G Private Computer](https://pc.0g.ai/?utm_source=cleanyourtv&utm_medium=github&utm_campaign=readme) or an [Anthropic plan](https://claude.com/pricing)), [Codex](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli) or [Antigravity CLI](https://antigravity.google/product/antigravity-cli).
+Подойдет любой из них: Claude Code ([0G Private Computer](https://pc.0g.ai/?utm_source=cleanyourtv&utm_medium=github&utm_campaign=readme) или по тарифу [Anthropic plan](https://claude.com/pricing)), [Codex](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli) или [Antigravity CLI](https://antigravity.google/product/antigravity-cli).
 
-| Where | What to do |
+| Где | Действия |
 |---|---|
-| **1. On the TV** | Settings → Device Preferences → About → press OK on **Build** seven times → back → Developer options → **USB debugging** on. If you see a Network or ADB debugging toggle, turn that on too. Keep the TV on. |
-| **2. On your computer** | Clone the repo and open that folder in your assistant (`git clone https://github.com/Gathin23/cleanyourtv`), then paste [`PROMPT.md`](PROMPT.md) and fill in your TV model. |
-| **3. Follow along** | Accept "Allow USB debugging?" on the TV, then answer the checklist: which apps you use, the dock size and app order, whether to keep the voice assistant, Chromecast and updates. |
+| **1. На вашем TV** | Настройки → Настройки устройства → Об устройстве → нажать "ОК" на пункте **Номер сборки** семь раз → назад → Для разработчиков → Включить **Отладка по USB**. Если видите переключатель отладки по сети или ADB, включите и его. Оставьте телевизор включенным. |
+| **2. На вашем компьютере** | Клонируйте репозиторий и откройте эту папку в вашем ассистенте (`git clone https://github.com/Gathin23/cleanyourtv`), затем вставьте [`PROMPT.md`](PROMPT.md) и укажите модель вашего телевизора. |
+| **3. Следуйте инструкциям** | Подтвердите «Разрешить отладку по USB?» на телевизоре, затем ответьте на вопросы из чек-листа: какие приложения вы используете, размер панели быстрого доступа и порядок приложений, оставлять ли голосового помощника, Chromecast и обновления. |
 
-Cloning matters: the assistant reuses this repo's `tools/disable.sh` and `launcher/build-and-install.sh`
-instead of writing its own, and that is where the backup, the Home guard and the restore record live.
+Клонирование важно: помощник использует готовые `tools/disable.sh` и `launcher/build-and-install.sh`
+из этого репозитория вместо того, чтобы писать свои собственные. Именно там хранятся резервная копия, защита главного экрана и журнал восстановления.
 
 The assistant backs up, debloats, builds and installs the launcher, and checks each step with
 screenshots pulled from the TV. With this repo as context it takes about fifteen minutes.
