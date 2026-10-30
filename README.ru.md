@@ -34,15 +34,15 @@
 | **Android TV или Google TV** | [Быстрый старт](#quick-start): ИИ-ассистент сделает всю работу примерно за пятнадцать минут. |
 | **Samsung, LG, Roku, Vizio или Hisense VIDAA TV** | [cleanyour.tv/not-android](https://cleanyour.tv/not-android): CleanYourTV там не запустится, но вы можете отключить отслеживание с помощью пульта. |
 | **Только телефон на Android** | Созданное сообществом [Clean Your TV app](https://cleanyour.tv/app): не нужен ни ноутбук, ни ИИ-ассистент |
-| **Хотите сначала взглянуть* | [Что вы получите](#what-you-get): скриншоты нового главного экрана. |
+| **Хотите сначала взглянуть** | [Что вы получите](#what-you-get): скриншоты нового главного экрана. |
 
 **Официальные ссылки:** [cleanyour.tv](https://cleanyour.tv) и этот репозиторий. Другие домены, использующие это имя, такие как
 cleanyourtv.com, не имеют отношения к данному проекту ([#1004](https://github.com/Gathin23/cleanyourtv/issues/1004)).
 
-[How it works](#how-it-works) · [Quick start](#quick-start) · [What you get](#what-you-get) ·
-[Supported TVs](#supported-tvs) · [Doing it by hand](#doing-it-by-hand) · [The launcher](#the-launcher) ·
-[Restoring](#restoring-your-tv) · [Firmware updates](#after-a-firmware-update) ·
-[Questions](#questions-people-ask) · [Contributing](#contributing)
+[Как это работает](#how-it-works) · [Быстрый старт](#quick-start) · [Что вы получите](#what-you-get) ·
+[Поддерживаемые TV](#supported-tvs) · [Ручная настройка](#doing-it-by-hand) · [Лаунчер](#the-launcher) ·
+[Восстановление](#restoring-your-tv) · [Обновление прошивки](#after-a-firmware-update) ·
+[Вопросы](#questions-people-ask) · [Участие в проекте](#contributing)
 
 ## How it works
 
