@@ -164,7 +164,7 @@ Alwtniet, Anker Nebula, BYINTEK, Epson, Formovie, Gadnic, HOTACK, HY320, JMGO, M
 | **Python 3** (любая версия 3.x) | нструменты. Команда venv ниже установит необходимые зависимости. |
 | **JDK 17 through 22** (полная JDK, включая `jlink`) и **Android SDK platform 34** с **build-tools 34.0.0 or any newer 34.x** | Сборка лаунчера. JDK 23 и новее ломают работу Gradle 8.9. Сборка использует именно Platform 34; более новая платформа ее не заменяет. В macOS, если ничего не установлено: `brew install openjdk@17 android-commandlinetools`, затем `sdkmanager "platforms;android-34" "build-tools;34.0.0"`. В Linux скрипт установки ищет в `~/Android/Sdk` и проверяет наличие `java` в вашем PATH. |
 
-`tools/tv.py` взаимодействует с сетевым ADB через порт 5555. Если этот порт остается закрытым, а телевизор предлагает беспроводную отладку с кодом сопряжения (так делают Chromecast с Google TV и Google TV Streamer), один раз выполните сопряжение со стандартным `adb` и сначала запустите `adb tcpip 5555` как описано в разделе [Troubleshooting](docs/TROUBLESHOOTING.md#connecting) describes.
+`tools/tv.py` взаимодействует с сетевым ADB через порт 5555. Если этот порт остается закрытым, а телевизор предлагает беспроводную отладку с кодом сопряжения (так делают Chromecast с Google TV и Google TV Streamer), один раз выполните сопряжение со стандартным `adb` и сначала запустите `adb tcpip 5555` как описано в разделе [Поиск неисправностей](docs/TROUBLESHOOTING.md#connecting).
 
 ```bash
 python3 -m venv tools/venv && tools/venv/bin/pip install -r tools/requirements.txt
@@ -179,9 +179,9 @@ TV_HOST=192.168.1.50 launcher/build-and-install.sh           # build the launche
 tools/theme.sh themes/aurora                                 # push a theme; --reset removes it
 ```
 
-| Tool | What it does |
+| Инструмент | Что делает |
 |---|---|
-| [`tools/tv.py`](tools/tv.py) | Pure-Python ADB client: shell, batch, push, pull, reboot, and screenshots, optionally pressing remote keys first. Works where the stock `adb` binary is blocked. Optional [paired Google ADB backend](tools/native-adb.md) for encrypted Wireless debugging. |
+| [`tools/tv.py`](tools/tv.py) | Чистый Python ADB-клиент: shell, batch, push, pull, reboot и скриншоты, с опциональным предварительным нажатием кнопок пульта. Работает там, где заблокирован стандартный бинарник `adb`. Опциональный [сопряженный Google ADB бэкенд](tools/native-adb.md) для зашифрованной беспроводной отладки. |
 | [`tools/docker-build.sh`](tools/docker-build.sh) | Builds the launcher or an add-on in Docker (JDK 17, Android SDK 34), so this computer needs nothing but Docker. Install the result with `SKIP_BUILD=1`. [Guide](tools/docker-build.md). |
 | [`tools/b64push.py`](tools/b64push.py) | Uploads large files such as APKs in base64 chunks and verifies the checksum. |
 | [`tools/relay.py`](tools/relay.py) | Forwards a local port to the TV's ADB port, for assistants whose sandbox can't reach your network. Listens on this computer only. [Guide](tools/relay.md). |
