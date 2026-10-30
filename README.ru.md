@@ -67,11 +67,11 @@ cleanyourtv.com, не имеют отношения к данному проек
 | **Компьютер, но нет ИИ-ассистента** | Выполните три шага самостоятельно: команды описаны в разделе [Ручная настройка](#doing-it-by-hand). |
 | **Только смартфон на Android** | Используйте созданное сообществом приложение [Clean Your TV app](https://cleanyour.tv/app) от [@udhaykumarbala](https://github.com/udhaykumarbala): подключение, анализ, очистка - примерно за пять минут. Никакого ноутбука, никаких агентов для написания кода. |
 
-The three steps below are written for a coding assistant: the computer needs to be on the same Wi-Fi as
-the TV, with a shell on it, plus Python 3, a JDK from 17 through 22, and Android SDK platform 34
-with build-tools 34 (the assistant builds the launcher there).
-Without an assistant, [Doing it by hand](#doing-it-by-hand)
-is the same job, run by you, and it has the install commands.
+Три шага ниже написаны для ИИ-ассистента: компьютер должен быть подключен к той же Wi-Fi сети,
+что и телевизор, иметь командную оболочку, а также установленные Python 3, JDK версий от 17 до 22 и Android SDK platform 34
+с build-tools 34 (помощник собирает лаунчер именно там).
+Без ИИ-ассистента перейти в раздел [Ручная настройка](#doing-it-by-hand)
+В разделе есть все те же действия, которые вы выполняете сами, а также необходимые команды для установки.
 
 Any of these work: Claude Code (on [0G Private Computer](https://pc.0g.ai/?utm_source=cleanyourtv&utm_medium=github&utm_campaign=readme) or an [Anthropic plan](https://claude.com/pricing)), [Codex](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli) or [Antigravity CLI](https://antigravity.google/product/antigravity-cli).
 
