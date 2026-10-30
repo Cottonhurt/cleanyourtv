@@ -27,17 +27,17 @@
   <a href="docs/PRESS.md"><img src="docs/card-halloween.jpg" alt="360 TV models · 97 brands · 30 languages · 561 KB launcher. Featured in TechCrunch, TechRadar, Tom's Guide, Mashable, Android Authority, XDA, FlatpanelsHD, It's FOSS, Phandroid, GIGAZINE, Xataka, WinFuture, Frandroid, Macitynet, Techaeris, TechPP and 298 more: 314 articles from 44 countries. Before: stock Google TV home with a sponsored ad. After: the Clean Your TV launcher." width="800"></a>
 </p>
 
-## Start here
+## С чего начать
 
-| You have | Go to |
+| Что у вас есть | Куда перейти |
 |---|---|
-| **An Android TV or Google TV** | [Quick start](#quick-start): a coding assistant does the work in about fifteen minutes. |
-| **A Samsung, LG, Roku, Vizio or Hisense VIDAA TV** | [cleanyour.tv/not-android](https://cleanyour.tv/not-android): CleanYourTV can't run there, but you can turn off the tracking with your remote. |
-| **Only an Android phone** | The community-built [Clean Your TV app](https://cleanyour.tv/app): no laptop, no coding agent. |
-| **Want to see it first** | [What you get](#what-you-get): screenshots of the new home screen. |
+| **Android TV или Google TV** | [Быстрый старт](#quick-start): ИИ-ассистент сделает всю работу примерно за пятнадцать минут. |
+| **Samsung, LG, Roku, Vizio или Hisense VIDAA TV** | [cleanyour.tv/not-android](https://cleanyour.tv/not-android): CleanYourTV там не запустится, но вы можете отключить отслеживание с помощью пульта. |
+| **Только телефон на Android** | Созданное сообществом [Clean Your TV app](https://cleanyour.tv/app): не нужен ни ноутбук, ни ИИ-ассистент |
+| **Хотите сначала взглянуть* | [Что вы получите](#what-you-get): скриншоты нового главного экрана. |
 
-**Official links:** [cleanyour.tv](https://cleanyour.tv) and this repo. Other domains using the name, such as
-cleanyourtv.com, are not run by this project ([#1004](https://github.com/Gathin23/cleanyourtv/issues/1004)).
+**Официальные ссылки:** [cleanyour.tv](https://cleanyour.tv) и этот репозиторий. Другие домены, использующие это имя, такие как
+cleanyourtv.com, не имеют отношения к данному проекту ([#1004](https://github.com/Gathin23/cleanyourtv/issues/1004)).
 
 [How it works](#how-it-works) · [Quick start](#quick-start) · [What you get](#what-you-get) ·
 [Supported TVs](#supported-tvs) · [Doing it by hand](#doing-it-by-hand) · [The launcher](#the-launcher) ·
