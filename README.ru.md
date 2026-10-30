@@ -53,19 +53,19 @@ cleanyourtv.com, не имеют отношения к данному проек
 |---|---|
 | **Резервное копирование** | Список установленных пакетов и настроек. |
 | **Отключение** | Отключаются телеметрия производителя, рекламные сервисы, ряды контента и предустановленный мусор с помощью `pm disable-user`. Ничего не удаляется, поэтому скрипт восстановления может отменить любое действие. |
-| **Установка* | Небольшой специальный лаунчер, установленный в качестве главного экрана по умолчанию. |
+| **Установка** | Небольшой специальный лаунчер, установленный в качестве главного экрана по умолчанию. |
 
 **Без root-прав и кабеля, ничего не удаляется, и восстановление одной командой, если вы передумаете.**
 
 Объём предустановленного «лишнего» ПО зависит от бренда, поэтому ваш помощник по программированию сначала обнаружит его на телевизоре и спросит разрешения, прежде чем вносить какие-либо изменения в то, чем вы, возможно, пользуетесь.
 
-## Quick start
+## Быстрый старт
 
-| You have | Do this |
+| Если у вас есть | Делайте это |
 |---|---|
-| **A computer** | Use the prompt with a coding assistant: the three steps below. |
-| **A computer, no coding assistant** | Run the three steps yourself: the commands are in [Doing it by hand](#doing-it-by-hand). |
-| **Only an Android phone** | Use the community-built [Clean Your TV app](https://cleanyour.tv/app) by [@udhaykumarbala](https://github.com/udhaykumarbala): connect, analyse, clean, in about five minutes. No laptop, no coding agent. |
+| **Компьютер** | Используйте промпт с ИИ-асисстентом: три шага ниже. |
+| **Компьютер, но нет ИИ-ассистента** | Выполните три шага самостоятельно: команды описаны в разделе [Ручная настройка](#doing-it-by-hand). |
+| **Только смартфон на Android** | Используйте созданное сообществом приложение [Clean Your TV app](https://cleanyour.tv/app) от [@udhaykumarbala](https://github.com/udhaykumarbala): подключение, анализ, очистка - примерно за пять минут. Никакого ноутбука, никаких агентов для написания кода. |
 
 The three steps below are written for a coding assistant: the computer needs to be on the same Wi-Fi as
 the TV, with a shell on it, plus Python 3, a JDK from 17 through 22, and Android SDK platform 34
