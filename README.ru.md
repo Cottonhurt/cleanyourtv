@@ -51,14 +51,13 @@ cleanyourtv.com, не имеют отношения к данному проек
 
 | Шаг | Что происходит |
 |---|---|
-| **Back&nbsp;up** | The list of installed packages and settings. |
-| **Disable** | The manufacturer's telemetry, ad services, content rows and preloaded junk, with `pm disable-user`. Nothing is uninstalled, so a restore script can undo every step. |
-| **Install** | A small native launcher, made the default home screen. |
+| **Резервное копирование** | Список установленных пакетов и настроек. |
+| **Отключение** | Отключаются телеметрия производителя, рекламные сервисы, ряды контента и предустановленный мусор с помощью `pm disable-user`. Ничего не удаляется, поэтому скрипт восстановления может отменить любое действие. |
+| **Установка* | Небольшой специальный лаунчер, установленный в качестве главного экрана по умолчанию. |
 
-**No root, no cable, nothing uninstalled, and a one-line restore if you change your mind.**
+**Без root-прав и кабеля, ничего не удаляется, и восстановление одной командой, если вы передумаете.**
 
-The bloat differs by brand, so the prompt has your coding assistant discover it on your TV and ask
-before touching anything you might use.
+Объём предустановленного «лишнего» ПО зависит от бренда, поэтому ваш помощник по программированию сначала обнаружит его на телевизоре и спросит разрешения, прежде чем вносить какие-либо изменения в то, чем вы, возможно, пользуетесь.
 
 ## Quick start
 
