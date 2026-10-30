@@ -93,15 +93,14 @@ cleanyourtv.com, не имеют отношения к данному проек
 | Элемент | Как это выглядит |
 |---|---|
 | **Абсолютно темный домашний экран** | Док-панель с четырьмя вашими любимыми приложениями в скругленной полосе, расположенная там же, где её размещает Apple TV. |
-| **A top shelf** | Names the focused app in large type, with an ambient glow in a colour taken from its artwork. |
-| **The rest of your apps in a grid** | Slides up when you press Down. |
-| **One floating glass highlight** | Springs from tile to tile. The focused tile lifts and shows its name. |
-| **Three frosted buttons** | Inputs (HDMI ports under the names you gave them in the TV's settings, AV, Live TV), Wi-Fi or Ethernet with the network name, Settings. |
-| **A greeting, a thin clock and the date** | In [Outfit](https://fonts.google.com/specimen/Outfit), and a matching Clock screensaver. Set `show_stats` in config or a theme for one line under the clock: CPU, free memory and free storage. It stays off unless you turn it on, and it refreshes only while Home is on screen. |
-| **Themes and module cards** | Themes change colours, wallpaper, dock and columns without a rebuild, and module cards let other apps plug a tile in, only with your say-so. |
+| **Верхняя панель** | Показывает название активного приложения крупным шрифтом с фоновой подсветкой цвета, взятого из его иконки. |
+| **Остальные приложения в сетке** | Выезжают снизу при нажатии кнопки «Вниз». |
+| **Эффект парящего стекла** | Перемещается от плитки к плитке. Активная плитка приподнимается и показывает свое название. |
+| **Три матовые кнопки** | Источники (порты HDMI под именами, которые вы задали в настройках ТV, AV, Эфирное TV), Wi-Fi или Ethernet с именем сети, Настройки. |
+| **Приветствие, тонкие часы и дата** | Шрифт [Outfit](https://fonts.google.com/specimen/Outfit), и соответствующая заставка с часами. Установите `show_stats`  конфиге или теме, чтобы под часами появилась одна строка: ЦП, свободная память и свободное хранилище. По умолчанию она выключена, и обновляется только когда активен главный экран. |
+| **Темы и карточки модулей** | Темы меняют цвета, обои, док-панели aоличество столбцов без пересборки, а карточки модулей позволяют другим приложениям добавлять свои плитки, но только с вашего разрешения. |
 
-And a TV that stops working against you: no sponsored rows, no "Discover" nags, no analytics
-phoning home, no apps you never asked for.
+Ваш телевизор перестает работать против вас: никаких спонсорских рядов и панелей, навязчивого «Рекомендуемого», отправки аналитики и приложений, которые вы не просили.
 
 | | |
 |---|---|
