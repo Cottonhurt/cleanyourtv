@@ -105,15 +105,15 @@ cleanyourtv.com, не имеют отношения к данному проек
 | | |
 |---|---|
 | ![Верхняя панель и фоновая подсветка](docs/focus-2-up-netflix.png) | ![HDMI со статусом подключения, AV, Эфирное ТВ](docs/inputs-menu.jpg) |
-| *Top shelf and ambient glow* | *Inputs: HDMI with connection state, AV, Live TV* |
-| ![The grid with the glass highlight on a tile and its name beneath](docs/focus-1-fancode.png) | ![The Clock screensaver: a thin clock drifting over the glow](docs/clock-screensaver.png) |
-| *The grid, one glass highlight, the tile's name* | *Clock screensaver, drifts so nothing burns in* |
-| ![The aurora theme: a wallpaper and tinted pills, pushed without a rebuild](themes/aurora/screenshot.jpg) | ![Six columns and a six-app dock from a theme's config.json](themes/six-columns/screenshot.jpg) |
-| *Aurora theme, pushed with `tools/theme.sh`* | *Six columns and a six-app dock, same launcher* |
-| ![Moving a tile: held OK, chose Move, the tile is picked up and the others dim](docs/tile-move.jpg) | ![The App library: installed apps, one press adds an app back to Home](docs/app-library.jpg) |
-| *With `tile_menu`, hold OK on a tile, Move: arrows carry it, Back puts it down* | *App library: one press puts a removed app back on Home* |
+| *Верхняя панель и фоновая подсветк* | *HDMI со статусом подключения, AV, Эфирное ТВ* |
+| ![Сетка, эффект парящего стекла, название плитки](docs/focus-1-fancode.png) | ![Заставка Часы: тонкие часы, дрейфующие на фоне сияния](docs/clock-screensaver.png) |
+| *Сетка, эффект парящего стекла, название плитки* | *Заставка Часы: тонкие часы, дрейфующие на фоне сияния* |
+| ![Тема Aurora: обои и цветные элементы интерфейса обновлены без перезапуска](themes/aurora/screenshot.jpg) | ![Шесть колонок на шесть док-панелей, этот же лаунчер config.json](themes/six-columns/screenshot.jpg) |
+| *Тема Aurora, применена через `tools/theme.sh`* | *Шесть колонок на шесть док-панелей, этот же лаунчер* |
+| ![Перемещение: зажмите OK, выберите «Переместить». Иконка выбрана, остальные элементы затемнены.](docs/tile-move.jpg) | ![Библиотека приложений: установленные приложения. Добавление на главный экран в одно нажатие](docs/app-library.jpg) |
+| *При включенном `tile_menu`, удерживайте OK на плитке, выберите Переместить: стрелки перемещают ее, «Назад» возвращает на место* | *AБиблиотека приложений: установленные приложения. Добавление на главный экран в одно нажатие* |
 
-## Supported TVs
+## Поддерживаемые TV
 
 Anything running **Android TV** or **Google TV**.
 
