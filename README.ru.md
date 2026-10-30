@@ -157,17 +157,14 @@ Alwtniet, Anker Nebula, BYINTEK, Epson, Formovie, Gadnic, HOTACK, HY320, JMGO, M
 
 ## Ручная настройка
 
-Everything the assistant does, you can run yourself. Two things have to be on the computer first:
+Все, что делает помощник, вы можете выполнить сами. Сначала на компьютере должны быть установлены две вещи:
 
-| You need | For |
+| Что нужно | Для чего |
 |---|---|
-| **Python 3** (any 3.x) | The tools. The venv command below installs what they import. |
-| **JDK 17 through 22** (a full JDK, including `jlink`) and **Android SDK platform 34** with **build-tools 34.0.0 or any newer 34.x** | Building the launcher. JDK 23 and newer stops Gradle 8.9. Platform 34 is the one the build reads; a newer platform does not replace it. On macOS, when none of these is installed: `brew install openjdk@17 android-commandlinetools`, then `sdkmanager "platforms;android-34" "build-tools;34.0.0"`. On Linux the install script looks in `~/Android/Sdk` and for `java` on your PATH. |
+| **Python 3** (любая версия 3.x) | нструменты. Команда venv ниже установит необходимые зависимости. |
+| **JDK 17 through 22** (полная JDK, включая `jlink`) и **Android SDK platform 34** с **build-tools 34.0.0 or any newer 34.x** | Сборка лаунчера. JDK 23 и новее ломают работу Gradle 8.9. Сборка использует именно Platform 34; более новая платформа ее не заменяет. В macOS, если ничего не установлено: `brew install openjdk@17 android-commandlinetools`, затем `sdkmanager "platforms;android-34" "build-tools;34.0.0"`. В Linux скрипт установки ищет в `~/Android/Sdk` и проверяет наличие `java` в вашем PATH. |
 
-`tools/tv.py` talks to network ADB on port 5555. If that port stays closed and the TV offers
-Wireless debugging with a pairing code (the Chromecast with Google TV and the Google TV Streamer
-do), pair it once with the stock `adb` and run `adb tcpip 5555` first, as
-[Troubleshooting](docs/TROUBLESHOOTING.md#connecting) describes.
+`tools/tv.py` взаимодействует с сетевым ADB через порт 5555. Если этот порт остается закрытым, а телевизор предлагает беспроводную отладку с кодом сопряжения (так делают Chromecast с Google TV и Google TV Streamer), один раз выполните сопряжение со стандартным `adb` и сначала запустите `adb tcpip 5555` как описано в разделе [Troubleshooting](docs/TROUBLESHOOTING.md#connecting) describes.
 
 ```bash
 python3 -m venv tools/venv && tools/venv/bin/pip install -r tools/requirements.txt
