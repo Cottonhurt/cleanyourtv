@@ -39,7 +39,7 @@
 **Официальные ссылки:** [cleanyour.tv](https://cleanyour.tv) и этот репозиторий. Другие домены, использующие это имя, такие как
 cleanyourtv.com, не имеют отношения к данному проекту ([#1004](https://github.com/Gathin23/cleanyourtv/issues/1004)).
 
-[Как это работает](#how-it-works) · [Быстрый старт](#quick-start) · [Что вы получите](#what-you-get) ·
+[Как это работает](#how-it-works) · [Быстрый старт](#quick-start) · [Что вы получаете](#what-you-get) ·
 [Поддерживаемые TV](#supported-tvs) · [Ручная настройка](#doing-it-by-hand) · [Лаунчер](#the-launcher) ·
 [Восстановление](#restoring-your-tv) · [Обновление прошивки](#after-a-firmware-update) ·
 [Вопросы](#questions-people-ask) · [Участие в проекте](#contributing)
@@ -84,16 +84,15 @@ cleanyourtv.com, не имеют отношения к данному проек
 Клонирование важно: помощник использует готовые `tools/disable.sh` и `launcher/build-and-install.sh`
 из этого репозитория вместо того, чтобы писать свои собственные. Именно там хранятся резервная копия, защита главного экрана и журнал восстановления.
 
-The assistant backs up, debloats, builds and installs the launcher, and checks each step with
-screenshots pulled from the TV. With this repo as context it takes about fifteen minutes.
+Ассистент делает резервную копию, очищает систему от мусора, собирает и устанавливает лаунчер, проверяя каждый шаг с помощью скриншотов, сделанных с телевизора. При использовании этого репозитория в качестве контекста процесс занимает около пятнадцати минут.
 
-## What you get
+## Что вы получаете
 
-A home screen that looks like an Apple TV and gets out of the way:
+Главный экран, который напоминает Apple TV и не мешает работе:
 
-| Part | What it looks like |
+| Элемент | Как это выглядит |
 |---|---|
-| **A pitch-black home** | A dock of your four favourite apps in a rounded band, where Apple TV puts it. |
+| **Абсолютно темный домашний экран** | Док-панель с четырьмя вашими любимыми приложениями в скругленной полосе, расположенная там же, где её размещает Apple TV. |
 | **A top shelf** | Names the focused app in large type, with an ambient glow in a colour taken from its artwork. |
 | **The rest of your apps in a grid** | Slides up when you press Down. |
 | **One floating glass highlight** | Springs from tile to tile. The focused tile lifts and shows its name. |
