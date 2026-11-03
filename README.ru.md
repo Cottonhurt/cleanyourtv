@@ -182,16 +182,16 @@ tools/theme.sh themes/aurora                                 # применит�
 | Инструмент | Что делает |
 |---|---|
 | [`tools/tv.py`](tools/tv.py) | Чистый Python ADB-клиент: shell, batch, push, pull, reboot и скриншоты, с опциональным предварительным нажатием кнопок пульта. Работает там, где заблокирован стандартный бинарник `adb`. Опциональный [сопряженный Google ADB бэкенд](tools/native-adb.md) для зашифрованной беспроводной отладки. |
-| [`tools/docker-build.sh`](tools/docker-build.sh) | Собирает лаунчер или аддон в Docker (JDK 17, Android SDK 34), поэтому на этом компьютере не нужно ничего, кроме Docker. Установите результат с `SKIP_BUILD=1`. [Гайд](tools/docker-build.md). |
-| [`tools/b64push.py`](tools/b64push.py) | Uploads large files such as APKs in base64 chunks and verifies the checksum. |
-| [`tools/relay.py`](tools/relay.py) | Forwards a local port to the TV's ADB port, for assistants whose sandbox can't reach your network. Listens on this computer only. [Guide](tools/relay.md). |
-| [`tools/disable.sh`](tools/disable.sh), [`restore.sh`](tools/restore.sh) | Apply or undo a debloat list, the undo from the state recorded before the change. |
-| [`tools/recovery.py`](tools/recovery.py) | Writes the record `disable.sh` needs to undo itself, and prints the restore batch. |
-| [`tools/check.py`](tools/check.py) | Compares the TV with the list that was applied, for what a firmware update undid; `--fix` puts it back. |
-| [`tools/adb-closed.py`](tools/adb-closed.py) | Checks that the TV's network ADB port is closed once debugging is off: exits 0 when the TV refuses the connection, 1 while it is still open, 2 when nothing answered or the check itself could not run. No `nc` needed. |
-| [`tools/privacy.py`](tools/privacy.py) | Audits the TV for voice, ACR and telemetry candidates and prints the evidence for each; `--write` turns the findings into a list `disable.sh` and `restore.sh` already understand. |
-| [`tools/theme.sh`](tools/theme.sh), [`theme_restart.py`](tools/theme_restart.py) | Push a folder from [`themes/`](themes/) to the launcher and restart Home. |
-| [`tools/manage.py`](tools/manage.py) | List every add-on, theme and switch with its screenshot, see what is on the TV, and install, update or remove one by running its creator's own script. |
+| [`tools/docker-build.sh`](tools/docker-build.sh) | Собирает лаунчер или аддон в Docker (JDK 17, Android SDK 34), поэтому на этом компьютере не нужно ничего, кроме Docker. Установите результат с `SKIP_BUILD=1`. [Руководство](tools/docker-build.md). |
+| [`tools/b64push.py`](tools/b64push.py) | Загружает большие файлы, такие как APK, чанками в base64 и проверяет контрольную сумму. |
+| [`tools/relay.py`](tools/relay.py) | Перенаправляет локальный порт на ADB-порт телевизора, если ассистент находится в песочнице и не видит вашу домашнюю сеть. Принимает подключения только с этого компьютера [Руководство](tools/relay.md). |
+| [`tools/disable.sh`](tools/disable.sh), [`restore.sh`](tools/restore.sh) | Применяют или отменяют список очистки, откатывая систему к состоянию, записанному до изменений. |
+| [`tools/recovery.py`](tools/recovery.py) | Записывает журнал, который нужен `disable.sh` для отмены своих действий, и выводит batch-скрипт восстановления. |
+| [`tools/check.py`](tools/check.py) | CСравнивает состояние телевизора с примененным списком, чтобы узнать, что откатило обновление прошивки; `--fix` возвращает все на место. |
+| [`tools/adb-closed.py`](tools/adb-closed.py) | Проверяет, что сетевой ADB-порт телевизора закрыт после выключения отладки: возвращает 0, если телевизор отказывает в подключении, 1, если порт все еще открыт, 2, если ничего не ответило или сама проверка не смогла запуститься. `nc` не требуется. |
+| [`tools/privacy.py`](tools/privacy.py) | Проверяет телевизор на наличие голосовых, ACR и телеметрических служб и выводит доказательства для каждой; `--write` превращает находки в список, который уже понимают `disable.sh` и `restore.sh`. |
+| [`tools/theme.sh`](tools/theme.sh), [`theme_restart.py`](tools/theme_restart.py) | Загружают папку из [`themes/`](themes/) в лаунчер и перезапускают главный экран. |
+| [`tools/manage.py`](tools/manage.py) | Выводит список всех аддонов, тем и переключателей с их скриншотами, показывает, что установлено на телевизоре, и позволяет установить, обновить или удалить их, запустив скрипт их создателя. |
 | [`tools/bench.py`](tools/bench.py) | Measures the launcher that answers HOME: key latency, how far the focus moved, janky frames, cold start, return to Home, and the idle CPU and PSS it costs. Changes nothing on the TV and writes the raw per-key numbers to JSON; no extra install. |
 | [`tools/trace.py`](tools/trace.py), [`trace_report.py`](tools/trace_report.py) | Records Perfetto traces of the launcher (return to Home, cold start, D-pad) and reports where its time goes, per run and before against after. Optional: needs [`requirements-perf.txt`](tools/requirements-perf.txt). [Guide](tools/trace.md). |
 | [`tools/flamechart.py`](tools/flamechart.py) | Draws a before/after flame chart from those traces, for a pull request: one lane per thread on a shared time scale, the work a change targets in magenta with its total. Optional, like the trace tools. [Guide](tools/flamechart.md). |
